@@ -30,8 +30,12 @@ class Truck: Vehicle {
         if cargoCapacityCubicFeet > 100 {
             return String(format: "Wait for \"%@\", then %@", soundBackupAlarm(), changeGears("Reverse"))
         } else {
-            return String(fromat: "Depress brake pedal", changeGears("Reverse"))
+            return String(format: "Depress brake pedal", changeGears("Reverse"))
         }
+    }
+    
+    override func goBackward() -> String {
+        return String(format: "Put %@\n Look behind you.", changeGears("Reverse"))
     }
     
     private func soundBackupAlarm() -> String {
