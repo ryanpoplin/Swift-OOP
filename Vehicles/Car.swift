@@ -12,10 +12,10 @@ import Foundation
 class Car: Vehicle {
     
     // properties
-    var isConvertible = false
-    var isHatchback = false
-    var hasSunroof = false
-    var numberOfDoors = 0
+    let isConvertible: Bool
+    let isHatchback: Bool
+    let hasSunroof: Bool
+    let numberOfDoors: Int
     
     override var vehicleDetails: String {
         
@@ -67,10 +67,13 @@ class Car: Vehicle {
         return "Beep! Beep!"
     }
     
-    override init() {
-        // init superclasses default stored values
-        super.init()
-        numberOfWheels = 4
+    init(brandName: String, modelName: String, modelYear: Int, powerSource: String, isConvertible: Bool, isHatchback: Bool, hasSunroof: Bool, numberOfDoors: Int) {
+        self.isConvertible = isConvertible
+        self.isHatchback = isHatchback
+        self.hasSunroof = hasSunroof
+        self.numberOfDoors = numberOfDoors
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear,
+            powerSource: powerSource, numberOfWheels: 4)
     }
     
 }

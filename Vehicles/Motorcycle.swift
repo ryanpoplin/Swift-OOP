@@ -11,7 +11,7 @@ import Foundation
 class Motorcycle: Vehicle {
     
     // properties
-    var engineNoise = ""
+    let engineNoise: String
     
     override var vehicleDetails: String {
         let basicDetails = super.vehicleDetails
@@ -37,11 +37,10 @@ class Motorcycle: Vehicle {
     override func makeNoise() -> String {
         return engineNoise
     }
-    
-    override init() {
-        super.init()
-        numberOfWheels = 2
-        powerSource = "I-4"
+
+    init(brandName: String, modelName: String, modelYear: Int, engineNoise: String, powerSource: String) {
+        self.engineNoise = engineNoise
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear, powerSource: powerSource, numberOfWheels: 2)
     }
     
 }

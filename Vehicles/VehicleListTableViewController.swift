@@ -28,46 +28,19 @@ class VehicleListTableViewController: UITableViewController {
         
         vehicles.removeAll(keepCapacity: true)
         
-        let ferrari = Car()
-        ferrari.brandName = "Ferrari"
-        ferrari.modelName = "F-50"
-        ferrari.modelYear = 1995
-        ferrari.isConvertible = true
-        ferrari.isHatchback = false
-        ferrari.hasSunroof = false
-        ferrari.numberOfDoors = 2
-        ferrari.powerSource = "Gas Engine - V-12"
+        let ferrari = Car(brandName: "Ferrari", modelName: "F-50", modelYear: 1995, powerSource: "V-12", isConvertible: true, isHatchback: false, hasSunroof: false, numberOfDoors: 2)
         
         vehicles.append(ferrari)
         
-        let maserati = Car()
-        maserati.brandName = "Maserati"
-        maserati.modelName = "Gran Turismo"
-        maserati.modelYear = 2011
-        maserati.isConvertible = true
-        maserati.isHatchback = false
-        maserati.hasSunroof = false
-        maserati.numberOfDoors = 2
-        maserati.powerSource = "Gas Engine - V-8"
+        let maserati = Car(brandName: "Maserati", modelName: "Gran Turismo", modelYear: 2011, powerSource: "V-8", isConvertible: true, isHatchback: false, hasSunroof: false, numberOfDoors: 2)
         
         vehicles.append(maserati)
         
-        let cbr = Motorcycle()
-        cbr.brandName = "Honda"
-        cbr.modelName = "CBR"
-        cbr.modelYear = 2016
-        cbr.powerSource = "I-4"
-        cbr.engineNoise = "Whine"
+        let cbr = Motorcycle(brandName: "Honda", modelName: "CBR", modelYear: 2016, engineNoise: "Whine", powerSource: "I-4")
         
         vehicles.append(cbr)
         
-        let f150 = Truck()
-        f150.brandName = "Ford"
-        f150.modelYear = 2005
-        f150.modelName = "F-150"
-        f150.numberOfWheels = 4
-        f150.cargoCapacityCubicFeet = 53
-        f150.powerSource = "V-8"
+        let f150 = Truck(brandName: "Ford", modelName: "F-150", modelYear: 2005, powerSource: "V-8", numberOfWheels: 4, cargoCapacity: 53)
         
         vehicles.append(f150)
         

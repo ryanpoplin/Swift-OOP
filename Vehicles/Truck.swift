@@ -11,7 +11,7 @@ import Foundation
 class Truck: Vehicle {
     
     // properties
-    var cargoCapacityCubicFeet = 0
+    let cargoCapacityCubicFeet: Int
     
     override var vehicleDetails: String {
         let basicDetails = super.vehicleDetails
@@ -47,6 +47,11 @@ class Truck: Vehicle {
         default:
             return "HOOOONK!"
         }
+    }
+    
+    init(brandName: String, modelName: String, modelYear: Int, powerSource: String, numberOfWheels: Int, cargoCapacity: Int) {
+        self.cargoCapacityCubicFeet = cargoCapacity
+        super.init(brandName: brandName, modelName: modelName, modelYear: modelYear, powerSource: powerSource, numberOfWheels: numberOfWheels)
     }
     
 }

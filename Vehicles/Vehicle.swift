@@ -12,11 +12,11 @@ import Foundation
 class Vehicle {
     
     // placeholder values for our properties a.k.a. stored properties
-    var brandName = "null"
-    var modelName = "null"
-    var modelYear = 0
-    var powerSource = "null"
-    var numberOfWheels = 0
+    let brandName: String
+    let modelName: String
+    let modelYear: Int
+    let powerSource: String
+    let numberOfWheels: Int
     
     var vehicleTitle: String {
         return String(format: "%d %@ %@", modelYear, brandName, modelName)
@@ -30,6 +30,14 @@ class Vehicle {
         basicDetails += "Power source: \(powerSource) \n"
         basicDetails += "# of wheels: \(numberOfWheels)"
         return basicDetails
+    }
+    
+    init(brandName: String, modelName: String, modelYear: Int, powerSource: String, numberOfWheels: Int) {
+        self.brandName = brandName
+        self.modelName = modelName
+        self.modelYear = modelYear
+        self.powerSource = powerSource
+        self.numberOfWheels = numberOfWheels
     }
 
     // in overriding/polymorphism; and object-oriented design, altough these methods don't do anything useful, the define at a core what a foundation for a Vehicle of any kind should have
