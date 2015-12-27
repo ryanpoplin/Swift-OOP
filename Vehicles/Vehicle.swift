@@ -72,3 +72,11 @@ class Vehicle {
     }
     
 }
+
+// MARK: - Adapter & Decorator Pattern
+
+extension Vehicle: CustomStringConvertible {
+    var description: String {
+        return vehicleTitle + "\n" + vehicleDetails
+    }
+}

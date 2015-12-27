@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1896C11C2FCA42005EB29A /* VehicleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1896C01C2FCA42005EB29A /* VehicleList.swift */; };
 		4AD916F41C2E819300831055 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD916F31C2E819300831055 /* Car.swift */; };
 		4AD916F61C2E9D3100831055 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD916F51C2E9D3100831055 /* Motorcycle.swift */; };
 		4AD916F81C2EA21D00831055 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD916F71C2EA21D00831055 /* Truck.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1896C01C2FCA42005EB29A /* VehicleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleList.swift; sourceTree = "<group>"; };
 		4AD916F31C2E819300831055 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		4AD916F51C2E9D3100831055 /* Motorcycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		4AD916F71C2EA21D00831055 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				4AD916F71C2EA21D00831055 /* Truck.swift */,
 				5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */,
 				4AD916F91C2F176600831055 /* UIAlertController+Convenience.swift */,
+				4A1896C01C2FCA42005EB29A /* VehicleList.swift */,
 				5DC89C6919BE274D00A75324 /* Main.storyboard */,
 				5DC89C6C19BE274D00A75324 /* Images.xcassets */,
 				5DC89C6119BE274D00A75324 /* Supporting Files */,
@@ -232,6 +235,7 @@
 				4AD916FA1C2F176700831055 /* UIAlertController+Convenience.swift in Sources */,
 				5DC89C8319BE289D00A75324 /* Vehicle.swift in Sources */,
 				5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */,
+				4A1896C11C2FCA42005EB29A /* VehicleList.swift in Sources */,
 				4AD916F41C2E819300831055 /* Car.swift in Sources */,
 				5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */,
 				4AD916F61C2E9D3100831055 /* Motorcycle.swift in Sources */,

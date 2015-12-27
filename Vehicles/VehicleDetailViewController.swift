@@ -31,6 +31,13 @@ class VehicleDetailViewController: UIViewController {
         }
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let vehicle = detailVehicle {
+            print(vehicle)
+        }
+    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
